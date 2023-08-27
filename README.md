@@ -1,0 +1,2 @@
+# wcfServiceRepo
+WCf reference 
