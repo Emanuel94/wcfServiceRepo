@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns:tns="http://tempuri.org/" elementFormDefault="qualified" targetNamespace="http://tempuri.org/" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:import schemaLocation="http://192.168.1.104:8084/ServiceHospital.svc?xsd=xsd2" namespace="http://schemas.datacontract.org/2004/07/WCFServiceMedico.Class" />
+  <xs:element name="listarMedicamento">
+    <xs:complexType>
+      <xs:sequence />
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="listarMedicamentoResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q1="http://schemas.datacontract.org/2004/07/WCFServiceMedico.Class" minOccurs="0" name="listarMedicamentoResult" nillable="true" type="q1:ArrayOfMedicamentoCLS" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="listarFormaceutica">
+    <xs:complexType>
+      <xs:sequence />
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="listarFormaceuticaResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q2="http://schemas.datacontract.org/2004/07/WCFServiceMedico.Class" minOccurs="0" name="listarFormaceuticaResult" nillable="true" type="q2:ArrayOfFormaFarmaceuticaCLS" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="recuperarMedicamento">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="iiMedicamento" type="xs:int" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="recuperarMedicamentoResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q3="http://schemas.datacontract.org/2004/07/WCFServiceMedico.Class" minOccurs="0" name="recuperarMedicamentoResult" nillable="true" type="q3:MedicamentoCLS" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="agregarYActualizarMedicamento">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q4="http://schemas.datacontract.org/2004/07/WCFServiceMedico.Class" minOccurs="0" name="medicamento" nillable="true" type="q4:MedicamentoCLS" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="agregarYActualizarMedicamentoResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="agregarYActualizarMedicamentoResult" type="xs:int" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="eliminarMeidcamento">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="iidMedicamento" type="xs:int" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="eliminarMeidcamentoResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="eliminarMeidcamentoResult" type="xs:int" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ReferenceGroup xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" ID="3671dc11-fc97-4d29-89c8-10ff31be286d" xmlns="urn:schemas-microsoft-com:xml-wcfservicemap">
+  <ClientOptions>
+    <GenerateAsynchronousMethods>false</GenerateAsynchronousMethods>
+    <GenerateTaskBasedAsynchronousMethod>true</GenerateTaskBasedAsynchronousMethod>
+    <EnableDataBinding>true</EnableDataBinding>
+    <ExcludedTypes />
+    <ImportXmlTypes>false</ImportXmlTypes>
+    <GenerateInternalTypes>false</GenerateInternalTypes>
+    <GenerateMessageContracts>false</GenerateMessageContracts>
+    <NamespaceMappings />
+    <CollectionMappings>
+      <CollectionMapping TypeName="System.Collections.Generic.List`1" Category="List" />
+    </CollectionMappings>
+    <GenerateSerializableTypes>true</GenerateSerializableTypes>
+    <Serializer>Auto</Serializer>
+    <UseSerializerForFaults>true</UseSerializerForFaults>
+    <ReferenceAllAssemblies>true</ReferenceAllAssemblies>
+    <ReferencedAssemblies />
+    <ReferencedDataContractTypes />
+    <ServiceContractMappings />
+  </ClientOptions>
+  <MetadataSources>
+    <MetadataSource Address="http://192.168.1.104:8084/ServiceHospital.svc?wsdl" Protocol="http" SourceId="1" />
+  </MetadataSources>
+  <Metadata>
+    <MetadataFile FileName="ServiceHospital.xsd" MetadataType="Schema" ID="4fad49ec-238b-4dfa-86a0-9bc0677ad49d" SourceId="1" SourceUrl="http://192.168.1.104:8084/ServiceHospital.svc?xsd=xsd0" />
+    <MetadataFile FileName="ServiceHospital1.xsd" MetadataType="Schema" ID="366d95d8-202d-4ba3-b67a-d91f6588b138" SourceId="1" SourceUrl="http://192.168.1.104:8084/ServiceHospital.svc?xsd=xsd1" />
+    <MetadataFile FileName="ServiceHospital2.xsd" MetadataType="Schema" ID="ec59cccb-f9f4-4d7e-a455-32f428b834df" SourceId="1" SourceUrl="http://192.168.1.104:8084/ServiceHospital.svc?xsd=xsd2" />
+    <MetadataFile FileName="ServiceHospital.wsdl" MetadataType="Wsdl" ID="c8f76322-30f5-4436-8d91-5be500072256" SourceId="1" SourceUrl="http://192.168.1.104:8084/ServiceHospital.svc?wsdl" />
+  </Metadata>
+  <Extensions>
+    <ExtensionFile FileName="configuration91.svcinfo" Name="configuration91.svcinfo" />
+    <ExtensionFile FileName="configuration.svcinfo" Name="configuration.svcinfo" />
+  </Extensions>
+</ReferenceGroup>
